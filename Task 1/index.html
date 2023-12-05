@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="/IMG/icon.png" type="image/x-icon">
+
+    <style>
+
+:root{
+    --bglight: #fff;
+    --colorLight:#000;
+    --maincolor:#FCA311;
+    --maincolorfade:#F29602;
+    /* --bglight: #001524;
+    --colorLight:#fff; */
+
+}
+
+    </style>
+</head>
+
+<body class="dark">
+
+    <header>
+        <div class="logo">Arbab Hassan</div>
+        <div class="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="head-btn">
+            <i class='bx bxs-moon' id="moon" onclick="setDark()" ></i>
+            <i class='bx bxs-sun' id="sun" onclick="setLight()" ></i>
+            <button>Hire Me</button>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <img src="/IMG/icon.png" alt="">
+        <h1>Hi, I am <span>Arbab Hassan</span>.</h1>
+        <h1><span>Creative</span> Developer</h1>
+        <p>How do you know you are a web developer?
+            <br>
+            Spend more time debugging than developing.😂
+        </p>
+        <button>Download Resume</button>
+    </section>
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="/IMG/IMG1.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h1>Delighted to <span>meet</span> you</h1>
+            <p>I'm a Arbab Web Developer living in NewYork, USA. I am recently working with big Tech companies all over
+                the world.</p>
+            <button>Learn more</button>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h1 >Projects</h1>
+
+        <div class="work">
+            <div class="box">
+                <div class="img">
+                    <img src="/IMG/IMG2.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="/IMG/IMG2.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="IMG/IMG3.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="/IMG/IMG2.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="/IMG/IMG2.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="/IMG/IMG2.jpg" alt="">
+
+                </div>
+                <div class="title">Food Ordering Site</div>
+                <button>Learn more</button>
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Get Connected</h1>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Message" id="Message">
+        </form>
+        <button class="btn">Submit</button>
+    </section>
+
+<hr>
+    <footer id="" class="footer">
+        <div style="display: flex;align-items: center; justify-content: center; gap: 10px;">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-linkedin-square'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-youtube' ></i>
+        </div>
+        <p>In Collabration with CodSoft</p>
+        <div class="text">All Right Reserved by | <span>Arbab Hassan</span></div>
+    </footer>
+
+<script>
+
+var root = document.querySelector(':root');
+
+// Create a function for getting a variable value
+function myFunction_get() {
+  // Get the styles (properties and values) for the root
+  var rs = getComputedStyle(r);
+  // Alert the value of the --blue variable
+  alert("The value of --blue is: " + rs.getPropertyValue('--bglight'));
+}
+
+// Create a function for setting a variable value
+function setDark() {
+//     console.log('ok')
+//   // Set the value of variable --blue to another value (in this case "lightblue")
+ 
+// root.style.setproperty('--bglight','#001524');
+ 
+
+var rs = getComputedStyle(root);
+  // Alert the value of the --blue variable
+  root.style.setProperty('--bglight', '#0F0F0F');
+  root.style.setProperty('--colorLight', '#eee');
+
+  document.getElementById("moon").style.display='none';
+  document.getElementById("sun").style.display='block';
+
+}
+
+
+function setLight() {
+//     console.log('ok')
+//   // Set the value of variable --blue to another value (in this case "lightblue")
+ 
+// root.style.setproperty('--bglight','#001524');
+ 
+
+var rs = getComputedStyle(root);
+  // Alert the value of the --blue variable
+  root.style.setProperty('--bglight', '#fff');
+  root.style.setProperty('--colorLight', '#000');
+
+  document.getElementById("moon").style.display='block';
+  document.getElementById("sun").style.display='none';
+
+}
+
+
+
+</script>
+
+</body>
+
+</html>

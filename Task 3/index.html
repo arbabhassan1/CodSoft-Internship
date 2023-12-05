@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="App.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <style>
+            #op{
+                background-color: #FA9D00;
+            }
+            #f-btn{
+                background-color: #A8A7A8;
+            }
+
+        </style>
+</head>
+
+<body>
+    <div class="cal">
+        
+        <div class="screen">
+            
+           <p  id="screen">0</p>
+
+        </div>
+        <div class="buttons">
+            <div class="row" id="row">
+                <button onclick="allClear()" id="f-btn" >AC</button>
+                <button onclick=" clear_LastNumber()" id="f-btn">C</button>
+                <button onclick=" AddExp('%')" id="f-btn">%</button>
+                <button id="op" onclick=" AddExp('/')" >÷</button>
+            </div>
+
+
+            <div class="row" id="row">
+                <button onclick=" AddExp('7')">7</button>
+                <button onclick=" AddExp('8')">8</button>
+                <button onclick="AddExp('9') ">9</button>
+                <button id="op" onclick=" AddExp('*')" >×</button>
+            </div>
+
+
+
+            <div class="row" id="row">
+                <button onclick="AddExp('4') ">4</button>
+                <button onclick=" AddExp('5')">5</button>
+                <button onclick="AddExp('6') ">6</button>
+                <button id="op" onclick=" AddExp('-')" >−</button>
+            </div>
+
+
+            <div class="row" id="row">
+                <button onclick="AddExp('1') ">1</button>
+                <button onclick="AddExp('2') ">2</button>
+                <button onclick="AddExp('3') ">3</button>
+                <button id="op" onclick=" AddExp('+')" >+</button>
+            </div>
+
+
+            <div class="row" id="row">
+                <button onclick="AddExp('0') " style="border-radius: 0; width: 5em; border-radius: 50px;">0</button>
+                <button onclick="AddExp('.') ">.</button>
+                <button id="op" onclick=" calculateExp()">=</button>
+           
+            </div>
+
+            <p>A Project by <a href="https://arbabhassan.bio.link/" target="_blank">Arbab Hassan</a></p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
